@@ -12,7 +12,7 @@ Python (Pandas, Numpy, Matplotlib, Seaborn, Pickle, sklearn), Google Colab, Djan
   - Removing null value
   - Using vectorizer to transform text data into feature index in the matrix
 ### Data Modelling:
-  - Regression model fitted: Decision Tree Classifier, Random Forest Classifier, Logistic Regressor
+  - Classification model fitted: Decision Tree Classifier, Random Forest Classifier, Logistic Regressor
   - The best models will be tuned with the estimator hyperparameters
 ### Webpage by Django:
   - The salary prediction will be put in a webpage by django project
