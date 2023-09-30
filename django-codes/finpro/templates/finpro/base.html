@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>SentimentAnalysisWebpage</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    </head>
+
+    <body style="background-color:#679496">
+        <header style="background-color:#d1fcf8;" class="page-header">
+            <div style="color:rgb(64, 102, 92)" class="container">
+                <h1>Sentiment Analysis Webpage</h1>
+                <p> Created by: Cindy </p>
+            </div>
+        </header>
+        <main style="color:white" class="container">
+            <div class="row">
+                <div class="col">
+                {% block content %}
+                {% endblock %}
+                </div>
+            </div>
+        </main>
+
+        <footer style="background-color:#d1fcf8;">
+                <p style="color:rgb(34, 34, 37)"><b>View list : </b><a href="{% url 'text_list' %}"> Click here </a></p>
+                <p style="color:rgb(34, 34, 37)"><b>Create new data : </b><a href="{% url 'post_new' %}"> Click here </a></p>
+        </footer>
+    </body>
+</html>

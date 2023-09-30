@@ -1,0 +1,12 @@
+{% extends 'finpro/base.html' %}
+
+{% block content %}
+    <article class="post">
+        <h1> Text Details </h1>
+        <h2> Text : {{ text.text|linebreaksbr }}</h2>
+        <p><time><b>Created on: </b>{{text.created_date}}</time></p>
+        <p><time><b>Result: </b>{{text.result}}</time></p>
+        <p><b>Graph: </b></p>
+        <img src='data:image/png;base64,{{ image }}'>
+    </article>
+{% endblock %}

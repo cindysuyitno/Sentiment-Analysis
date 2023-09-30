@@ -1,0 +1,15 @@
+{% extends 'finpro/base.html' %}
+
+{% block content%}
+<p><i> Post lists:
+    <time>published on Saturday 7/30/2022, 10:38</time>
+</i></p>
+        {%for text in texts%}
+        <article class="post">
+            <h2><a href="{% url 'text_detail' pk=text.pk %}" style="color:#ccd5ae">{{ text.text }}</a></h2>
+            <p><time>Created on: {{text.created_date}}</time></p>
+            <p><time>Results: {{text.result}}</time></p>
+        </article>
+        {%endfor%}
+<br>
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends 'finpro/base.html' %}
+{% block content %}
+    <h1>New post!</h1>
+    <p>Create a new form here:</p>
+    <form method="POST" class="loginfrm"> {%csrf_token%}
+        {{form.as_p}}
+        <button type="submit" style="color:grey"><b>Save</b></button>
+        <button type="reset" style="color:grey"><b>Reset</b></button>
+    </form>
+    <br>
+{% endblock %}

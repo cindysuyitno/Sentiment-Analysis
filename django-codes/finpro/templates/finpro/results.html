@@ -1,0 +1,16 @@
+{% extends "finpro/base.html" %}
+
+{% block content %}
+<div class="render import form">
+    <h3>{{ title }}</h3>
+    <div>
+        <form class="result1">
+            {% csrf_token %}
+            {{ text }}
+            {{ image }}
+            {{ result }}
+        </br>
+        </form>
+    </div>
+</div>
+{% endblock %}
