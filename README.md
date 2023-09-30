@@ -7,7 +7,7 @@ Python (Pandas, Numpy, Matplotlib, Seaborn, Pickle, sklearn), Google Colab, Djan
 ## Table of Content:
 ### Data Collection:
   - Sources: https://data.world/datafiniti/consumer-reviews-of-amazon-products
-  - Contains date, reviewText, reviewTime, and overall rating
+  - Contains reviewText, reviewTime, and overall rating
 ### Data Cleaning:
   - Removing null value
   - Using vectorizer to transform text data into feature index in the matrix
